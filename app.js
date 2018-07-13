@@ -98,6 +98,9 @@ app.post("/myaction2", function (req, res) {
     });
 });
 
+
+////////////////////////////////////////////////////////////////
+
 // ffmpeg().input('./videos/sample.h264').complexFilter([{
 //     filter: 'setpts',
 //     options: '2*PTS',
@@ -111,8 +114,13 @@ app.post("/myaction2", function (req, res) {
 //     console.log("DONE :)");
 // });
 
+//// ------------Take screenshots-------------
+// ffmpeg().input('./cool.mp4').screenshots({
+//     folder:'./videos',
+//     count:6
+// });
 
-ffmpeg().input('./cool.mp4').screenshots({
-    folder:'./videos',
-    count:6
-});
+//// ------------Generate a yuv file-------------
+// ffmpeg().input('./cool.mp4').save('out.yuv').on('end', function () {
+//     console.log("Done2 :)")
+// });
