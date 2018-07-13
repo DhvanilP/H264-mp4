@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>h264</title>
+</head>
+<body>
+<div>
+    <form action="http://localhost:8080/myaction" method="post" target="playerFrame">
+        Name:
+        <input type="text" name="videoname">
+        <input type="submit" value="Play">
+    </form>
+    <br>
+    <form action="http://localhost:8080/myaction2" method="post">
+        Name:
+        <input type="text" name="videoname">
+        <input type="submit" value="download">
+    </form>
+</div>
+<br>
+<div>
+    <iframe name="playerFrame" width="480" height="320"></iframe>
+</div>
+</body>
+</html>
